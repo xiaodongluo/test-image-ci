@@ -84,9 +84,7 @@ RUN wget https://gitee.com/hanlicun/ltmp/raw/master/src/mongodb.so && mv mongodb
 #安装 PHP的memcached扩展
 RUN wget https://gitee.com/hanlicun/ltmp/raw/master/src/libmemcached-1.0.18.tar.gz &&tar zxvf \
 libmemcached-1.0.18.tar.gz && rm -rf libmemcached-1.0.18.tar.gz &&cd libmemcached-1.0.18/\
-&&mkdir -p /usr/local/webserver/libmemcached && ./configure /
---prefix=/usr/local/webserver/libmemcached &&make && make install && cd ../ && rm -rf \
-libmemcached-1.0.18/ && wget https://gitee.com/hanlicun/ltmp/raw/master/src/memcached-3.0.2.tgz\
+&&mkdir -p /usr/local/webserver/libmemcached && ./configure --prefix=/usr/local/webserver/libmemcached &&make && make install && cd ../&& rm -rf libmemcached-1.0.18/ && wget https://gitee.com/hanlicun/ltmp/raw/master/src/memcached-3.0.2.tgz\
 &&tar zxvf memcached-3.0.2.tgz && rm -rf memcached-3.0.2.tgz && cd memcached-3.0.2\
 &&/usr/local/webserver/php/bin/phpize && ./configure --enable-memcached \
 --with-php-config=/usr/local/webserver/php/bin/php-config \
