@@ -1,5 +1,5 @@
 FROM nginx 
-MAINTAINER xiaodongle
+MAINTAINER xiaodonglfefe
 ENV RUN_USER nginx 
 ENV RUN_GROUP nginx 
 ENV DATA_DIR /data/web
