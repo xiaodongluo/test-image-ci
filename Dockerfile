@@ -1,5 +1,5 @@
 FROM nginx 
-MAINTAINER xiaodongluo-two
+MAINTAINER xiaodongluo-three
 ENV RUN_USER nginx 
 ENV RUN_GROUP nginx 
 ENV DATA_DIR /data/web
