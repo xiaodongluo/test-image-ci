@@ -1,2 +1,2 @@
 FROM centos
-MAINTAINER xiaodongluo-master-test
+MAINTAINER xiaodongfeluo-master-test
