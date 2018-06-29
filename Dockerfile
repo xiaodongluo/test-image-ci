@@ -1,10 +1,10 @@
-FROM nginx 
-MAINTAINER xiaodongluo-lnmp-again
-ENV RUN_USER nginx 
-ENV RUN_GROUP nginx 
+FROM nginx
+MAINTAINER 2018-06-29 16:52:21
+ENV RUN_USER nginx
+ENV RUN_GROUP nginx
 ENV DATA_DIR /data/web
 ENV LOG_DIR /data/log/nginx
-RUN mkdir /data/log/nginx -p 
+RUN mkdir /data/log/nginx -p
 RUN chown nginx.nginx -R /data/log/nginx
 RUN ln -sf /dev/stdout /data/log/nginx/access.log
 ADD web /data/web
