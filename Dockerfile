@@ -1,3 +1,3 @@
 FROM python
-RUN git clone https://github.com/xiaodongluo/test-image-ci && cd test-image-ci && git checkout -b img-test origin/img-test && python helloworld.py
+MAINTAINER 2018-06-29 16:41:19
 MAINTAINER xiaodongluo-lnmp-test
