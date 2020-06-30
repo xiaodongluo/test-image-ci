@@ -1,2 +1,2 @@
-FROM ccr.ccs.tencentyun.com/3211064422/nginx:test
-MAINTAINER 2018-06-29 19:20:59
+FROM centos
+MAINTAINER 2020-06-30 17:38:36
